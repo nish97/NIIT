@@ -1,0 +1,120 @@
+/*import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+@font-face { font-family: roboto-regular; 
+       src: url('Roboto-Regular.ttf'); }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: roboto-regular;
+  margin: 0;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("vend.png");
+  height: 50%;
+  width:100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size:contain;
+  position: relative;
+  padding:40px 40px;
+}
+.text{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.text h1{
+  margin-bottom: -10px;
+}
+.text button{
+   color: black;
+   border-radius:5px;
+   border:none;
+   outline: 0;
+   background-color: #ddd;
+   display:inline-block;
+   padding:10px 20px 10px 10px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  z-index: 99999;
+  flex-direction: row;
+  border: 2px solid #666;
+  background-color: #f1f1f1;
+  border-bottom-right-radius: 10px;
+  box-shadow: 1px 0px 3px;
+}
+
+nav a {
+  color: black;
+  padding: 14px 20px;
+  border-right: 2px solid #666;
+  text-decoration: none;
+  box-shadow: 1px 1px 3px;
+  text-align: center;
+}
+
+nav a:hover:not(.active) {
+  background-color: #4CAF50;
+}
+.active{
+  background-color: #4CAF50;
+}
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top:20px;
+  background: #ddd;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+  }
+
+.side {
+  flex: 30%;
+  background-color: white;
+  padding: 20px;
+
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  padding: 20px;
+  background: #ddd;
+}
+
+@media screen and (min-width: 660px) {
+  .row, footer {   
+    flex-direction: row;
+  }
+  .main{
+    border-right: 20px solid #ddd;
+  }
+@media screen and (min-width: 600px) {
+  header{
+    background-size:cover;
+  }
+}
+@media screen and (min-width: 660px) {
+   nav{   
+    flex-direction: row;
+  }
