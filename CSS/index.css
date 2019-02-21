@@ -1,7 +1,6 @@
-@font-face { 
-    font-family: roboto-regular; 
-    src: url('Roboto-Regular.ttf'); 
-}
+/*import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
+@font-face { font-family: roboto-regular; 
+       src: url('Roboto-Regular.ttf'); }
 * {
   box-sizing: border-box;
 }
@@ -51,7 +50,7 @@ nav {
 }
  nav a {
   color: black;
-  padding: 14px 20px;
+  padding: 14px 15px;
   border-right: 2px solid #666;
   text-decoration: none;
   box-shadow: 1px 1px 3px;
@@ -134,5 +133,3 @@ footer {
     background-size:cover;
   }
 }
-ymir@9940
- 09920307@Tk12 
