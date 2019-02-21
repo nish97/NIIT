@@ -1,72 +1,106 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="CSS/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- </head>
-  <body>
+	    <title>Vend</title> <!--head section with hyperlink to awesome fonts and external link to css -->
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+  </head>
+  <body class="content">
 
-   <header>
-     <div class="text">
-       <h1 style="font-size:50px">Welcome to Vend</h1>
-       <p>Your One-stop shop</p>
-       <button> &nbsp &nbspLogin</button>
-     </div>
-   </header>
+	   <header class="heading">  <!--Header Section with Login and Signup button-->
+	     <div class="text">
+	       <h1 class="heads" style="margin-bottom: -10px;">Welcome to Vend</h1>
+	       <p>Your One-stop shop</p>
+	       <button class="btons"> &nbsp &nbspLogin</button>
+	        <span>Or</span>
+	       <button class="btons"> &nbsp &nbspSignup</button>
+	     </div>
+	   </header>
 
-    <nav>
-     <a class="active" href="#">Link1</a>
-     <a href="#">Link2</a>
-     <a href="#">Link3</a>
-     <a href="#">Account</a>
-    </nav>
+	    <nav class="navbar">  <!--Navigation bar with Tabs -->
+	     <a class="active tab" href="#">Home</a>
+	     <a class="tab"href="#">About us</a>
+	     <a class="tab"href="#">Account</a>
+	     <a class="tab"href="#">Cart</a>
+	    </nav>
 
-    <section class="row">
-     <article class="main">
-       <h1>Products</h1>
-       <div ><img src="CSS/vend.png"></div><hr>
-       <div class="fakeimg" style="height:60px;">Image</div><br>
-     </article>
-     <aside class="side">
-       <h1>Today Deals</h1>
-       <div class="fakeimg" style="height:200px;">Image</div>
-     </aside>
-     </section>
+	    <section class="row">  <!--Product Catalog Box And Today Deals -->
+	     <article class="main">
+	         <h1 style="font-size:4Vmax">Product Category</h1>
+	         <picture class="nest">
+		         <figure class="prod imga">
+		              <div class="description">
+		              	   <p><b>Mobilephones</b></p>
+		              </div>
+		         </figure><br>
+		         <figure class="prod imgb">
+		              <div class="description">
+		              	   <p><b>Laptops</b></p>
+		              </div>
+		          </figure><br>
+		          <figure class="prod imgc">
+		              <div class="description">
+		              	   <p><b>Camera&Accessories</b></p>
+		              </div>
+		          </figure><br>
+		     </picture>    
+	     </article>
+	     <aside class="side">
+	         <h1 style="font-size:4Vmax">Hot Deals</h1>
+	         <figure class="prod imgd">
+	              <div class="description">
+	              	   <p><i>50%OFF</i></p>
+	              </div>
+	         </figure><br>
+	         <figure class="prod imge">
+	              <div class="description">
+	              	   <p><i>Buy 1 get 1 free </i></p>
+	              </div>
+	          </figure><br>
+	          <figure class="prod imgf">
+	              <div class="description">
+	              	   <p><i>20% Cashback upto 3000/-</i></p>
+	              </div>
+	          </figure>
+	     </aside>
+	    </section>
 
-     <footer>
-      <article class="main">
-        <div class="lop">
-         <h4>Company</h4>
-         <ul>
-           <li><a href="#">Link1</a></li>
-           <li><a href="#">Link2</a></li>
-           <li><a href="#">Link3</a></li>
-           <li><a href="#">Link4</a></li>
-         </ul>
-        </div>
-        <div class="los">
-         <h4>Products</h4>
-         <ul>
-           <li><a href="#">Link1</a></li>
-           <li><a href="#">Link2</a></li>
-           <li><a href="#">Link3</a></li>
-           <li><a href="#">Link4</a></li>
-         </ul>
-        </div>
-       </article>
-      <aside class="side">
-        <h2>Follow Us On:</h2>
-      <span class="fa-stack ">
-        <i class="">fa fa-circle</i>
-        <i class="fa fa-google-plus "></i>
-      </span>
-      <span class="fa-stack fa-3x">
-         <i class="fa fa-facebook-square "></i>
-       </span><br>
-      </aside>
-     </footer>
+	    <footer class="footline"> <!--Footer section -->
+	     <article class="foot">
+	         <div class="lop">
+	             <h4>Company</h4>
+	             <ul>
+	                 <li><a href="#">Link1</a></li>
+	           		 <li><a href="#">Link2</a></li>
+	           		 <li><a href="#">Link3</a></li>
+	           		 <li><a href="#">Link4</a></li>
+	             </ul>
+	         </div>
+	         <div class="lop">
+	         	 <h4>Products</h4>
+	             <ul>
+	           		 <li><a href="#">Link1</a></li>
+	           		 <li><a href="#">Link2</a></li>
+	            	 <li><a href="#">Link3</a></li>
+	            	 <li><a href="#">Link4</a></li>
+	         	 </ul>
+	         </div>
+	     	 <div class="los">
+		         <h2>Follow Us On:</h2>
+		         <figure>
+			         <span class="fa-stack">
+			       	     <i class="fa fa-circle-thin fa-stack-2x"></i>
+			       	      <i class="fa fa-google-plus fa-stack-1x "></i>
+			         </span>
+			         <span class="fa-stack">
+		     	 	     <i class="fa fa-circle-thin fa-stack-2x"></i>
+		         	     <i class="fa fa-facebook-square fa-stack-1x "></i>
+				     </span>
+			     </figure>
+	         </div>
+	     </artcile>
+	    </footer>
   </body>
 </html>

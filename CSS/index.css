@@ -4,14 +4,14 @@
 * {
   box-sizing: border-box;
 }
-body {
+.content {
   font-family: roboto-regular;
   margin: 0;
 }
 
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("vend.png");
-  height: 50%;
+.heading {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("vend1.png");
+  height:100%;
   width:100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,11 +22,13 @@ header {
 .text{
   margin-bottom: 30px;
   text-align: center;
+  color:white;
+  text-shadow: 0px 0px 2px white; 
 }
-.text h1{
-  margin-bottom: -10px;
+.text .heads{
+  font-size:5Vmax;
 }
-.text button{
+.text .btons{
    color: black;
    border-radius:5px;
    border:none;
@@ -36,11 +38,10 @@ header {
    padding:10px 20px 10px 10px;
 }
 
-nav {
+.navbar {
   position: sticky;
   top: 0;
   display: flex;
-  flex-direction: column;
   z-index: 99999;
   flex-direction: row;
   border: 2px solid #666;
@@ -48,7 +49,7 @@ nav {
   border-bottom-right-radius: 10px;
   box-shadow: 1px 0px 3px;
 }
- nav a {
+ .tab {
   color: black;
   padding: 14px 15px;
   border-right: 2px solid #666;
@@ -57,45 +58,83 @@ nav {
   text-align: center;
 }
 
-nav a:hover:not(.active) {
+.tab:hover:not(.active) {
   background-color: #4CAF50;
 }
 .active{
   background-color: #4CAF50;
 }
+.imga{
+  background-image: url("mobile.jpg");
+}
+.imgb{
+  background-image: url("laptop.jpeg");
+}
+.imgc{
+  background-image: url("camera.jpeg");
+}
+.imgd{
+  background-image: url("TV.jpg");
+}
+.imge{
+  background-image: url("vend1.png");
+}
+.imgf{
+  background-image: url("desktop.jpeg");
+      height:auto; 
+    width:100%;
+}
+.prod{
+    margin:0;
+    flex:50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border:2px solid #ddd;
+}
+.description{
+    background-color: rgb(0,0,0,0.5); 
+    text-align: center;
+    color:white;
+    margin-top: 100px;
+    margin-bottom:-10px;
+}
 .row {  
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top:20px;
-  background: #ddd;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    background: #ddd;
+    padding:20px;
 }
-img{
- width:100%;
- height:auto;
-}
-
 .main {
-  flex: 70%;
-  background-color: white;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  }
-
-.side {
-  flex: 30%;
-  background-color: white;
-  padding: 20px;
-
+   flex: 70%;
+   background-color: white;
+}
+.nest{
+   display:flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+}
+.side{
+   flex: 30%;
+   background-color: white;
+}
+.foot{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   background-color: white;
+   padding: 20px;
 }
 .lop{
-  flex:35%
+   flex:35%;
+   background-color: #ddd;
+   border:10px solid #ddd;
 }
 .los{
-  flex:35%;
+   flex:30%;
+   background-color: #ddd;
+   border:10px solid #ddd;
 }
 a{
   text-decoration: none;
@@ -103,33 +142,21 @@ a{
 ul{
   list-style-type: none;
 }
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-footer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+.footline {
   padding: 20px;
   background: #ddd;
 }
 
 @media screen and (min-width: 660px) {
-  .nav,.row, footer {   
+  .foot,.navbar,.row,.nest {   
     flex-direction: row;
   }
   .main{
     border-right: 20px solid #ddd;
   }
-  footer .main{
-    flex-direction: row;
-  }
 }
 @media screen and (min-width: 600px) {
-  header{
+  .heading{
     background-size:cover;
   }
 }
