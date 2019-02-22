@@ -62,7 +62,6 @@
 .tab:hover:not(.active) {
   background-color: #4CAF50;
 }
-
 .active{
   background-color: #4CAF50;
 }
