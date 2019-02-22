@@ -27,6 +27,7 @@
 }
 .text .heads{
   font-size:5Vmax;
+  margin-bottom: -10px;
 }
 .text .btons{
    color: black;
@@ -60,6 +61,9 @@
 
 .tab:hover:not(.active) {
   background-color: #4CAF50;
+}
+.colour{
+  text-shadow: 0px 0px 4px black; 
 }
 .active{
   background-color: #4CAF50;
